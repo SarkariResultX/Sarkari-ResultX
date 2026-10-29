@@ -1,129 +1,253 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Sarkari ResultX - सरकारी नौकरी, रिजल्ट, एडमिट कार्ड, परीक्षा और भर्ती अपडेट।">
-<title>Sarkari ResultX™ | सरकारी नौकरी, रिजल्ट और एडमिट कार्ड</title>
-<style>
-:root{--red:#a9153d;--nav:#050505;--blue:#153c9a;--border:#d8d8d8}
-*{box-sizing:border-box}
-body{margin:0;background:#fff;color:#111;font-family:Arial,Helvetica,sans-serif;font-size:14px}
-a{color:#001d7a;text-decoration:underline}
-.wrap{max-width:1000px;margin:auto}
-.brand{background:var(--red);color:white;display:flex;align-items:center;justify-content:center;gap:14px;padding:14px 10px;text-align:center;min-height:92px}
-.logo{width:76px;height:76px;object-fit:cover;border-radius:50%;border:2px solid #fff;box-shadow:0 0 0 2px #7c0928;flex:0 0 auto}
-.brand h1{margin:0;font-size:clamp(21px,4vw,31px);line-height:1.1;color:#fff}
-.brand small{display:block;font-size:11px;margin-top:5px;font-weight:bold}
-nav{background:#050505;display:flex;justify-content:center;flex-wrap:wrap;border-bottom:1px solid #777}
-nav a{color:#fff;text-decoration:none;padding:13px 12px;border-right:1px solid #777;font-size:12px;white-space:nowrap}
-nav a:hover{background:#333}
-.searchrow{display:flex;justify-content:flex-end;padding:9px 14px}
-.searchrow input{padding:8px;border:1px solid #ccc;border-radius:3px;width:210px;max-width:100%}
-h2.headline{text-align:center;color:#17357c;font-family:Georgia,serif;font-size:17px;margin:14px 8px}
-.welcome{text-align:center;color:#a9153d;font-size:11px;margin:12px 8px;font-weight:bold}
-.welcome span{background:#1559a7;color:white;border-radius:12px;padding:3px 8px}
-.social{text-align:center;color:#17357c;font-size:11px;font-weight:bold;margin:14px 5px}
-.ticker{overflow:hidden;white-space:nowrap;color:#143b8b;font-weight:bold;font-size:14px;padding:8px 0;margin:0 0 12px}
-.ticker span{display:inline-block;padding-left:100%;animation:scroll 34s linear infinite}
-@keyframes scroll{to{transform:translateX(-100%)}}
-.discover{border:1px solid #ddd;margin:12px 5px 38px;border-radius:3px;color:#444}
-.discover-title{background:#e8efff;padding:10px 14px;font-weight:bold;font-size:12px}
-.discover a{display:block;padding:12px 14px;border-top:1px solid #e2e2e2;text-decoration:none;color:#555;font-size:12px}
-.discover a:after{content:"›";float:right;font-size:20px;line-height:12px}
-.quicklinks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px;margin:0 8px 15px}
-.quicklinks a{display:flex;align-items:center;justify-content:center;text-align:center;min-height:45px;padding:7px 5px;color:#fff;text-decoration:none;font-weight:bold;font-size:11px;border:2px solid #e5e5e5}
-.q1{background:#8c9200}.q2{background:#1737b9}.q3{background:#ff7900}.q4{background:#ae0000}.q5{background:#e23b17}.q6{background:#176a30}.q7{background:#d72c9b}.q8{background:#2385d4}
-.columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;margin:0 5px 20px}
-.panel{border:2px solid #e0c7a1;min-width:0}
-.panel h3{background:var(--red);color:#fff;text-align:center;margin:0;padding:6px 3px;font-size:14px}
-.panel ul{margin:8px 8px 12px;padding-left:13px}
-.panel li{margin:10px 0 14px;font-size:12px;line-height:1.35}
-.note{margin:10px 8px 22px;border:1px solid #ddd;padding:12px;background:#fafafa;font-size:12px;line-height:1.5}
-footer{background:#111;color:#eee;text-align:center;padding:18px 8px;font-size:12px}
-@media(max-width:600px){nav a{padding:10px 7px;font-size:11px}.brand{min-height:82px}.logo{width:58px;height:58px}.quicklinks{grid-template-columns:repeat(4,minmax(0,1fr));margin-left:4px;margin-right:4px}.quicklinks a{font-size:10px;min-height:48px;padding:5px 2px}.columns{gap:4px;margin-left:3px;margin-right:3px}.panel h3{font-size:12px;padding:6px 1px}.panel ul{margin:7px 4px 10px;padding-left:12px}.panel li{font-size:11px;margin:10px 0 13px}.discover{margin-bottom:30px}h2.headline{font-size:15px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sarkari ResultX पर सरकारी नौकरी, नई भर्ती, परीक्षा परिणाम, एडमिट कार्ड, उत्तर कुंजी, सिलेबस और प्रवेश से जुड़ी जानकारी सरल हिंदी में प्राप्त करें।">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#a9153d">
+  <title>Sarkari ResultX - Latest Government Jobs, Results &amp; Admit Card</title>
+  <style>
+    :root{--red:#a9153d;--red-dark:#7d102d;--blue:#173b8f;--border:#d8b36a;--text:#171717;--muted:#555;--light:#f5f7fb}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;color:var(--text);background:#fff;font:14px/1.5 Arial,Helvetica,sans-serif}
+    a{color:#001d7a}
+    .wrap{width:min(1000px,calc(100% - 14px));margin:0 auto}
+    .brand{background:var(--red);color:#fff;text-align:center;padding:17px 10px 14px;border-bottom:4px solid var(--red-dark)}
+    .brand h1{margin:0;font-size:clamp(23px,4vw,32px);line-height:1.25}
+    .brand p{margin:4px 0 0;font-size:12px;font-weight:bold;letter-spacing:.3px}
+    .brand .tagline{font-size:13px;font-weight:normal}
+    nav{display:flex;flex-wrap:wrap;justify-content:center;background:#050505;border-bottom:1px solid #777}
+    nav a{padding:10px 13px;color:#fff;text-decoration:none;font-size:12px;font-weight:bold;border-right:1px solid #454545}
+    nav a:hover,nav a:focus{background:#333}
+    .searchrow{display:flex;justify-content:center;padding:13px 5px 5px}
+    .searchrow form{display:flex;gap:6px;width:min(620px,100%)}
+    .searchrow input{min-width:0;flex:1;padding:10px;border:1px solid #bbb;border-radius:3px;font-size:14px}
+    .searchrow button{border:0;border-radius:3px;padding:10px 17px;background:var(--blue);color:#fff;font-weight:bold}
+    .welcome{text-align:center;margin:10px 0;color:var(--red);font-weight:bold}
+    .ticker{overflow:hidden;white-space:nowrap;margin:10px 0 14px;border:1px solid #ddd;background:#fff8e8;padding:9px 0}
+    .ticker strong{background:var(--red);color:#fff;padding:10px}
+    .ticker-track{display:inline-block;padding-left:100%;animation:move 36s linear infinite}
+    .ticker-track a{margin:0 16px;font-weight:bold}
+    @keyframes move{to{transform:translateX(-100%)}}
+    .section-title{margin:15px 0 9px;text-align:center;color:#fff;background:var(--red);padding:8px;font-size:18px}
+    .quicklinks{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px;margin:10px 0 18px}
+    .quicklinks a{display:block;text-align:center;padding:11px 5px;color:#fff;text-decoration:none;font-weight:bold;border-radius:2px;font-size:13px}
+    .q1{background:#7c8b00}.q2{background:#1737b9}.q3{background:#c62828}.q4{background:#237b31}
+    .columns{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;align-items:stretch}
+    .panel{border:2px solid var(--border);min-width:0;background:#fff}
+    .panel h2{background:var(--red);color:#fff;text-align:center;margin:0;padding:7px 4px;font-size:16px}
+    .panel ul{margin:8px 9px 12px;padding-left:15px}
+    .panel li{margin:0 0 11px;overflow-wrap:anywhere}
+    .panel a{font-size:13px}
+    .more{display:block;text-align:right;margin:0 10px 10px;font-weight:bold;text-decoration:none;font-size:12px}
+    .info{margin:17px 0;padding:12px;border:1px solid #ddd;background:#f8f8f8;color:#333;font-size:13px}
+    .info h2{font-size:17px;margin:0 0 6px;color:var(--red)}
+    footer{margin-top:20px;padding:17px 12px;background:#111;color:#eee;text-align:center;font-size:13px}
+    footer p{margin:5px 0}
+    footer a{color:#fff}
+    .smallprint{font-size:12px;color:#ddd}
+    @media(max-width:650px){
+      nav a{padding:9px 8px;font-size:11px}
+      .quicklinks{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .columns{grid-template-columns:1fr}
+      .panel h2{font-size:17px}
+      .panel li{margin-bottom:10px}
+      .ticker-track{animation-duration:48s}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ticker-track{animation:none;padding-left:8px;white-space:normal}}
+  </style>
 </head>
 <body>
-<div class="wrap">
-<header class="brand">
-  <img class="logo" src="logo.png" alt="Sarkari ResultX logo">
-  <div><h1>SARKARI RESULTX™</h1><small>WWW.SARKARIRESULTX.IN</small></div>
-</header>
-<nav aria-label="मुख्य मेन्यू">
-<a href="#home">Home</a><a href="#latest-job">Latest Job</a><a href="#admit-card">Admit Card</a><a href="#result">Results</a><a href="#admission">Admission</a><a href="#scholarship">Scholarship</a><a href="#syllabus">Syllabus</a><a href="#more">More⌄</a>
-</nav>
-<div class="searchrow"><input id="search" type="search" placeholder="Search jobs, results..." aria-label="Search"></div>
-<main id="home">
-<h2 class="headline">Sarkari ResultX™ 2026 – सरकारी नौकरी, रिजल्ट, एडमिट कार्ड और भर्ती अपडेट</h2>
-<p class="welcome">Welcome to Sarkari ResultX™ | Government Job & Education Updates <span>Exam Update</span></p>
-<p class="social">Sarkari ResultX™: Latest Jobs || Admit Cards || Results || Answer Keys || Syllabus</p>
-<div class="ticker"><span>UPSSSC PET 2026 Update&nbsp; ||&nbsp; SSC Recruitment Updates&nbsp; ||&nbsp; Railway Jobs&nbsp; ||&nbsp; Police Recruitment&nbsp; ||&nbsp; Admit Card & Result Updates&nbsp; ||&nbsp; सरकारी नौकरी की नई जानकारी</span></div>
-<section class="discover" aria-label="Discover more">
-<div class="discover-title">Discover more</div>
-<a href="#latest-job">Government Job Listings</a>
-<a href="#result">Exam Result Updates</a>
-<a href="#admit-card">Admit Card & Exam Dates</a>
-</section>
-<section class="quicklinks" aria-label="महत्वपूर्ण लिंक">
-<a class="q1" href="#latest-job">UPPSC RO ARO Apply Online</a>
-<a class="q2" href="#latest-job">Bihar Teacher TRE Apply Online</a>
-<a class="q3" href="#latest-job">Railway NTPC Level Apply Online</a>
-<a class="q4" href="#latest-job">Railway Graduate Level Jobs</a>
-<a class="q5" href="#admit-card">All India Bar Exam Admit Card</a>
-<a class="q6" href="#scholarship">UP Scholarship Apply Online</a>
-<a class="q7" href="#latest-job">UP TGT Teacher Recruitment</a>
-<a class="q8" href="#admit-card">UPSSSC PET Admit Card</a>
-</section>
-<section class="columns">
-<article class="panel" id="result"><h3>Result</h3><ul>
-<li><a href="https://upsssc.gov.in/" target="_blank" rel="noopener">UPSSSC Results and Notices</a></li>
-<li><a href="https://uppsc.up.nic.in/" target="_blank" rel="noopener">UPPSC Result / Merit List</a></li>
-<li><a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC GD / CGL / CHSL Results</a></li>
-<li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway Recruitment Board Results</a></li>
-<li><a href="https://bpsc.bihar.gov.in/" target="_blank" rel="noopener">BPSC Exam Results</a></li>
-<li><a href="https://www.ibps.in/" target="_blank" rel="noopener">IBPS Exam Results</a></li>
-<li><a href="https://nta.ac.in/" target="_blank" rel="noopener">NTA / UGC NET Results</a></li>
-<li><a href="https://joinindianarmy.nic.in/" target="_blank" rel="noopener">Indian Army Recruitment Updates</a></li>
-<li><a href="https://uppbpb.gov.in/" target="_blank" rel="noopener">UP Police Recruitment Updates</a></li>
-<li><a href="https://indiapostgdsonline.gov.in/" target="_blank" rel="noopener">India Post GDS Result Updates</a></li>
-</ul></article>
-<article class="panel" id="admit-card"><h3>Admit Card</h3><ul>
-<li><a href="https://upsssc.gov.in/" target="_blank" rel="noopener">UPSSSC PET Admit Card / Notice</a></li>
-<li><a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Exam Admit Card</a></li>
-<li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway RRB Admit Card</a></li>
-<li><a href="https://uppsc.up.nic.in/" target="_blank" rel="noopener">UPPSC Exam Admit Card</a></li>
-<li><a href="https://nta.ac.in/" target="_blank" rel="noopener">NTA Exam City / Admit Card</a></li>
-<li><a href="https://bpsc.bihar.gov.in/" target="_blank" rel="noopener">BPSC Admit Card Updates</a></li>
-<li><a href="https://bseh.org.in/" target="_blank" rel="noopener">Board Exam Admit Card Notices</a></li>
-<li><a href="https://uppbpb.gov.in/" target="_blank" rel="noopener">UP Police Exam Updates</a></li>
-<li><a href="https://ctet.nic.in/" target="_blank" rel="noopener">CTET Admit Card & Exam Info</a></li>
-<li><a href="https://jeemain.nta.ac.in/" target="_blank" rel="noopener">JEE Main Admit Card Updates</a></li>
-</ul></article>
-<article class="panel" id="latest-job"><h3>Latest Job</h3><ul>
-<li><a href="https://upsssc.gov.in/" target="_blank" rel="noopener">UPSSSC Latest Recruitment</a></li>
-<li><a href="https://uppsc.up.nic.in/" target="_blank" rel="noopener">UPPSC Online Form & Jobs</a></li>
-<li><a href="https://www.ssc.gov.in/" target="_blank" rel="noopener">SSC Recruitment Online Form</a></li>
-<li><a href="https://www.rrbcdg.gov.in/" target="_blank" rel="noopener">Railway RRB Recruitment</a></li>
-<li><a href="https://uppbpb.gov.in/" target="_blank" rel="noopener">UP Police Constable Recruitment</a></li>
-<li><a href="https://www.joinindiannavy.gov.in/" target="_blank" rel="noopener">Indian Navy Recruitment</a></li>
-<li><a href="https://joinindianarmy.nic.in/" target="_blank" rel="noopener">Indian Army / Agniveer Jobs</a></li>
-<li><a href="https://www.ibps.in/" target="_blank" rel="noopener">Banking Recruitment Updates</a></li>
-<li><a href="https://www.indiapost.gov.in/" target="_blank" rel="noopener">India Post Recruitment</a></li>
-<li><a href="https://www.ncs.gov.in/" target="_blank" rel="noopener">National Career Service Jobs</a></li>
-</ul></article>
-</section>
-<div class="note" id="more"><strong>महत्वपूर्ण सूचना:</strong> Sarkari ResultX™ एक स्वतंत्र जानकारी पोर्टल का नमूना है। आवेदन करने से पहले संबंधित विभाग की आधिकारिक वेबसाइट पर नोटिफिकेशन, पात्रता, तिथि और फीस की पुष्टि करें। यहाँ दिए गए लिंक संबंधित विभागों के आधिकारिक पोर्टल पर ले जाते हैं। इस पेज की जॉब लिस्ट अपने-आप अपडेट नहीं होती; नई भर्तियों के लिए जानकारी स्वयं अपडेट करनी होगी।</div>
-<footer>© 2026 Sarkari ResultX™ | सरकारी नौकरी और शिक्षा अपडेट<br>यह वेबसाइट किसी सरकारी विभाग की आधिकारिक वेबसाइट नहीं है।</footer>
-</main>
-</div>
-<script>
-document.getElementById('search').addEventListener('input',function(){
- const q=this.value.trim().toLowerCase();
- document.querySelectorAll('.panel li').forEach(function(li){
-   li.style.display=li.textContent.toLowerCase().includes(q)?'':'none';
- });
-});
-</script>
+  <header class="brand" id="home">
+    <h1>SARKARI RESULTX™</h1>
+    <p>सरकारी नौकरी • परीक्षा परिणाम • एडमिट कार्ड</p>
+    <p class="tagline">Latest Government Jobs, Results &amp; Exam Updates</p>
+  </header>
+
+  <nav aria-label="मुख्य नेविगेशन">
+    <a href="#home">Home</a>
+    <a href="#latest-jobs">Latest Jobs</a>
+    <a href="#admit-card">Admit Card</a>
+    <a href="#results">Results</a>
+    <a href="#admission">Admission</a>
+    <a href="#syllabus">Syllabus</a>
+    <a href="#answer-key">Answer Key</a>
+    <a href="#important">Important</a>
+  </nav>
+
+  <main class="wrap">
+    <div class="searchrow">
+      <form id="site-search" role="search">
+        <input id="search-input" type="search" placeholder="यहाँ भर्ती, रिजल्ट या परीक्षा खोजें..." aria-label="वेबसाइट में खोजें">
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <p class="welcome">Sarkari ResultX™ पर आपका स्वागत है — सरकारी परीक्षाओं की जानकारी एक जगह।</p>
+
+    <div class="ticker" aria-label="मुख्य श्रेणियाँ">
+      <strong>महत्वपूर्ण अपडेट</strong>
+      <span class="ticker-track">
+        <a href="#latest-jobs">नई सरकारी भर्तियाँ</a>
+        <a href="#results">परीक्षा परिणाम</a>
+        <a href="#admit-card">एडमिट कार्ड</a>
+        <a href="#answer-key">उत्तर कुंजी</a>
+        <a href="#syllabus">सिलेबस और परीक्षा पैटर्न</a>
+      </span>
+    </div>
+
+    <h2 class="section-title">महत्वपूर्ण लिंक | Important Links</h2>
+    <div class="quicklinks">
+      <a class="q1" href="#latest-jobs">Latest Jobs</a>
+      <a class="q2" href="#results">Results</a>
+      <a class="q3" href="#admit-card">Admit Card</a>
+      <a class="q4" href="#answer-key">Answer Key</a>
+    </div>
+
+    <div class="columns">
+      <section class="panel" id="results">
+        <h2>Results</h2>
+        <ul>
+          <li><a href="#results">नई परीक्षा का परिणाम यहाँ जोड़ें</a></li>
+          <li><a href="#results">मेरिट लिस्ट और चयन सूची</a></li>
+          <li><a href="#results">कटऑफ और स्कोरकार्ड अपडेट</a></li>
+          <li><a href="#results">लिखित परीक्षा परिणाम</a></li>
+          <li><a href="#results">अन्य परीक्षा परिणाम</a></li>
+        </ul>
+        <a class="more" href="#results">View More »</a>
+      </section>
+
+      <section class="panel" id="admit-card">
+        <h2>Admit Card</h2>
+        <ul>
+          <li><a href="#admit-card">नया एडमिट कार्ड अपडेट यहाँ जोड़ें</a></li>
+          <li><a href="#admit-card">परीक्षा शहर की सूचना</a></li>
+          <li><a href="#admit-card">प्रवेश पत्र डाउनलोड निर्देश</a></li>
+          <li><a href="#admit-card">आगामी परीक्षा के एडमिट कार्ड</a></li>
+          <li><a href="#admit-card">अन्य एडमिट कार्ड अपडेट</a></li>
+        </ul>
+        <a class="more" href="#admit-card">View More »</a>
+      </section>
+
+      <section class="panel" id="latest-jobs">
+        <h2>Latest Government Jobs</h2>
+        <ul>
+          <li><a href="#latest-jobs">नई भर्ती की जानकारी यहाँ जोड़ें</a></li>
+          <li><a href="#latest-jobs">आवेदन की अंतिम तिथि और योग्यता</a></li>
+          <li><a href="#latest-jobs">उत्तर प्रदेश सरकारी भर्ती</a></li>
+          <li><a href="#latest-jobs">SSC, Railway और Banking भर्ती</a></li>
+          <li><a href="#latest-jobs">अन्य सरकारी नौकरी अपडेट</a></li>
+        </ul>
+        <a class="more" href="#latest-jobs">View More »</a>
+      </section>
+
+      <section class="panel" id="answer-key">
+        <h2>Answer Key</h2>
+        <ul>
+          <li><a href="#answer-key">नई उत्तर कुंजी यहाँ जोड़ें</a></li>
+          <li><a href="#answer-key">प्रोविजनल Answer Key</a></li>
+          <li><a href="#answer-key">उत्तर कुंजी पर आपत्ति की जानकारी</a></li>
+          <li><a href="#answer-key">अंतिम उत्तर कुंजी</a></li>
+        </ul>
+        <a class="more" href="#answer-key">View More »</a>
+      </section>
+
+      <section class="panel" id="syllabus">
+        <h2>Syllabus &amp; Exam Pattern</h2>
+        <ul>
+          <li><a href="#syllabus">नया सिलेबस यहाँ जोड़ें</a></li>
+          <li><a href="#syllabus">परीक्षा पैटर्न और चयन प्रक्रिया</a></li>
+          <li><a href="#syllabus">विषयवार पाठ्यक्रम</a></li>
+          <li><a href="#syllabus">पिछले वर्षों के प्रश्नपत्र</a></li>
+          <li><a href="#syllabus">तैयारी से संबंधित जानकारी</a></li>
+        </ul>
+        <a class="more" href="#syllabus">View More »</a>
+      </section>
+
+      <section class="panel" id="admission">
+        <h2>Admission</h2>
+        <ul>
+          <li><a href="#admission">नया प्रवेश फॉर्म यहाँ जोड़ें</a></li>
+          <li><a href="#admission">विश्वविद्यालय प्रवेश सूचना</a></li>
+          <li><a href="#admission">प्रवेश परीक्षा की जानकारी</a></li>
+          <li><a href="#admission">काउंसलिंग और आवेदन निर्देश</a></li>
+        </ul>
+        <a class="more" href="#admission">View More »</a>
+      </section>
+
+      <section class="panel" id="certificate">
+        <h2>Certificate &amp; Verification</h2>
+        <ul>
+          <li><a href="#certificate">प्रमाणपत्र डाउनलोड जानकारी</a></li>
+          <li><a href="#certificate">दस्तावेज सत्यापन अपडेट</a></li>
+          <li><a href="#certificate">मार्कशीट और प्रमाणपत्र सूचना</a></li>
+          <li><a href="#certificate">अन्य प्रमाणपत्र सेवाएँ</a></li>
+        </ul>
+        <a class="more" href="#certificate">View More »</a>
+      </section>
+
+      <section class="panel" id="offline-jobs">
+        <h2>Outsourcing / Offline Jobs</h2>
+        <ul>
+          <li><a href="#offline-jobs">ऑफलाइन भर्ती की सूचना यहाँ जोड़ें</a></li>
+          <li><a href="#offline-jobs">संविदा और आउटसोर्सिंग भर्ती</a></li>
+          <li><a href="#offline-jobs">विभागवार आवेदन निर्देश</a></li>
+          <li><a href="#offline-jobs">अन्य ऑफलाइन अवसर</a></li>
+        </ul>
+        <a class="more" href="#offline-jobs">View More »</a>
+      </section>
+
+      <section class="panel" id="important">
+        <h2>Important Information</h2>
+        <ul>
+          <li><a href="#important">आवेदन फॉर्म और निर्देश</a></li>
+          <li><a href="#important">परीक्षा शुल्क और भुगतान सूचना</a></li>
+          <li><a href="#important">आवेदन में सुधार की जानकारी</a></li>
+          <li><a href="#important">आधिकारिक नोटिस और घोषणाएँ</a></li>
+        </ul>
+        <a class="more" href="#important">View More »</a>
+      </section>
+    </div>
+
+    <section class="info">
+      <h2>Sarkari ResultX™ के बारे में</h2>
+      <p>Sarkari ResultX™ एक स्वतंत्र सूचना वेबसाइट है, जहाँ सरकारी नौकरी, भर्ती, परीक्षा परिणाम, एडमिट कार्ड, उत्तर कुंजी, सिलेबस और प्रवेश से संबंधित जानकारी व्यवस्थित रूप में साझा की जाएगी। हमारा उद्देश्य पाठकों को आवश्यक जानकारी आसानी से खोजने में मदद करना है।</p>
+      <p><strong>महत्वपूर्ण:</strong> यह वेबसाइट किसी सरकारी विभाग की आधिकारिक वेबसाइट नहीं है। किसी भी आवेदन, फीस भुगतान या दस्तावेज जमा करने से पहले संबंधित विभाग की आधिकारिक वेबसाइट पर नोटिस, पात्रता, तारीख और निर्देश अवश्य जाँचें।</p>
+    </section>
+  </main>
+
+  <footer>
+    <p><strong>Sarkari ResultX™</strong></p>
+    <p>Latest Government Jobs, Results &amp; Admit Card</p>
+    <p><a href="#home">Home</a> | <a href="#latest-jobs">Latest Jobs</a> | <a href="#results">Results</a> | <a href="#admit-card">Admit Card</a> | <a href="#important">Important Information</a></p>
+    <p class="smallprint">सूचना की शुद्धता और अंतिम तिथियों की पुष्टि संबंधित आधिकारिक स्रोत से करें।</p>
+    <p class="smallprint">© <span id="year"></span> Sarkari ResultX™. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('site-search').addEventListener('submit', function(event) {
+      event.preventDefault();
+      const query = document.getElementById('search-input').value.trim().toLowerCase();
+      if (!query) {
+        document.getElementById('search-input').focus();
+        return;
+      }
+      const panels = Array.from(document.querySelectorAll('.panel'));
+      let firstMatch = null;
+      panels.forEach(function(panel) {
+        const matched = panel.textContent.toLowerCase().includes(query);
+        panel.style.outline = matched ? '3px solid #f0b429' : 'none';
+        if (matched && !firstMatch) firstMatch = panel;
+      });
+      if (firstMatch) {
+        firstMatch.scrollIntoView({behavior:'smooth', block:'start'});
+      } else {
+        alert('इस शब्द से संबंधित श्रेणी इस पेज पर नहीं मिली। कृपया अलग शब्द से खोजें।');
+      }
+    });
+  </script>
 </body>
 </html>
